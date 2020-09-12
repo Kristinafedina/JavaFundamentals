@@ -11,13 +11,11 @@ public class MainTask {
 
     public static void main(String[] args) throws IOException {
 
-        System.out.println(Arrays.asList(OptionalTask1.shortestLongestNumber()));
-        /*System.out.println(countSum( args));
         reversCommandLine(args);
         sayHello();
         printRandomInt();
-        System.out.println('\n' + nameOfMonthByNumber());*/
-        if(Reader.get()!=null) {
+        System.out.println('\n' + nameOfMonthByNumber());
+        if(Reader.get() != null) {
             Reader.get().close();
         }
     }
