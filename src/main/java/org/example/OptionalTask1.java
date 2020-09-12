@@ -1,9 +1,6 @@
 package org.example;
 
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 
 
@@ -62,6 +59,30 @@ public class OptionalTask1 {
             throw new IllegalArgumentException("String " + string + " does not contain \" \"");
         }
         return parts;
+    }
+
+    private static Map<String, Set<Integer>> createMap() {
+
+        Map<String, Set<Integer>> map = new HashMap<>();
+
+        for(String str : getMyArray().getArray()) {
+            map.put(str, createSetOfInteger(str));
+        }
+        return map;
+    }
+
+    private static List<String> splitStringToCharacters(String str) {
+        List<String> list = new ArrayList<>();
+        list = Arrays.asList(str.split(""));
+        return list;
+    }
+
+    private static Set<Integer> createSetOfInteger(String str) {
+        Set<String> setStr = new HashSet<>(splitStringToCharacters(str));
+        Set<Integer> setInt = setStr.stream()
+                .map(s -> Integer.valueOf(s))
+                .collect(Collectors.toSet());
+        return setInt;
     }
 
     static class Comp implements Comparator<String> {
