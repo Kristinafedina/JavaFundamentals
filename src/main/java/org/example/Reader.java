@@ -27,7 +27,7 @@ public class Reader {
      * @param instance of bufferedreader
      * @return string
      */
-    private String readFromConsol(BufferedReader instance) {
+    public static String readFromConsol(BufferedReader instance) {
         String srtFromConsole = null;
         try {
             srtFromConsole = instance.readLine();

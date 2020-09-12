@@ -11,11 +11,12 @@ public class MainTask {
 
     public static void main(String[] args) throws IOException {
 
-        System.out.println(countSum( args));
+        System.out.println(Arrays.asList(OptionalTask1.shortestLongestNumber()));
+        /*System.out.println(countSum( args));
         reversCommandLine(args);
         sayHello();
         printRandomInt();
-        System.out.println('\n' + nameOfMonthByNumber());
+        System.out.println('\n' + nameOfMonthByNumber());*/
         if(Reader.get()!=null) {
             Reader.get().close();
         }
@@ -28,7 +29,7 @@ public class MainTask {
     public static String nameOfMonthByNumber() {
         System.out.println("Enter number of month:");
         String month;
-        int numberOfMonth = Integer.valueOf(readFromConsol(Reader.get()));
+        int numberOfMonth = Integer.valueOf(Reader.readFromConsol(Reader.get()));
 
         switch (numberOfMonth) {
             case 1 : month = Month.JANUARY.getNameOfMonth();
@@ -90,7 +91,7 @@ public class MainTask {
      */
     public static  void sayHello() {
         System.out.println("Enter Your name, please!");
-        String userName = readFromConsol(Reader.get());
+        String userName = Reader.readFromConsol(Reader.get());
         if (!userName.isEmpty() || userName != null){
             System.out.println('\n' + "Hello, " + userName + "!");
         } else{
@@ -99,28 +100,12 @@ public class MainTask {
     }
 
     /**
-     * read from consol
-     * @param br
-     * @return string
-     */
-    private static String readFromConsol(BufferedReader br) {
-        String srtFromConsole = null;
-        br = new BufferedReader(new InputStreamReader(System.in));
-        try {
-            srtFromConsole = br.readLine();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return srtFromConsole;
-    }
-
-    /**
      * create array and print it in one row & and each value in row
      * @throws NumberFormatException
      */
     public static void printRandomInt() throws NumberFormatException {
         System.out.println("Type, how many numbers You need");
-        int number = Integer.valueOf(readFromConsol(Reader.get()));
+        int number = Integer.valueOf(Reader.readFromConsol(Reader.get()));
         if(number != 0 ) {
             int arrray[] = new int[number];
             Random r = new Random();
