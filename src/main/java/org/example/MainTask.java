@@ -9,8 +9,6 @@ import java.util.Random;
 
 public class MainTask {
 
-    private static BufferedReader br;
-
     public static void main(String[] args) throws IOException {
 
         System.out.println(countSum( args));
@@ -18,8 +16,8 @@ public class MainTask {
         sayHello();
         printRandomInt();
         System.out.println('\n' + nameOfMonthByNumber());
-        if(br!=null) {
-            br.close();
+        if(Reader.get()!=null) {
+            Reader.get().close();
         }
     }
 
@@ -30,7 +28,7 @@ public class MainTask {
     public static String nameOfMonthByNumber() {
         System.out.println("Enter number of month:");
         String month;
-        int numberOfMonth = Integer.valueOf(readFromConsol(br));
+        int numberOfMonth = Integer.valueOf(readFromConsol(Reader.get()));
 
         switch (numberOfMonth) {
             case 1 : month = Month.JANUARY.getNameOfMonth();
@@ -92,7 +90,7 @@ public class MainTask {
      */
     public static  void sayHello() {
         System.out.println("Enter Your name, please!");
-        String userName = readFromConsol(br);
+        String userName = readFromConsol(Reader.get());
         if (!userName.isEmpty() || userName != null){
             System.out.println('\n' + "Hello, " + userName + "!");
         } else{
@@ -122,7 +120,7 @@ public class MainTask {
      */
     public static void printRandomInt() throws NumberFormatException {
         System.out.println("Type, how many numbers You need");
-        int number = Integer.valueOf(readFromConsol(br));
+        int number = Integer.valueOf(readFromConsol(Reader.get()));
         if(number != 0 ) {
             int arrray[] = new int[number];
             Random r = new Random();
