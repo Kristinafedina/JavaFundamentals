@@ -1,0 +1,396 @@
++--Repo/
+|  +--Game/
+|  |  +--.git/
+|  |  |  +--COMMIT_EDITMSG
+|  |  |  +--config
+|  |  |  +--description
+|  |  |  +--FETCH_HEAD
+|  |  |  +--HEAD
+|  |  |  +--hooks/
+|  |  |  |  +--applypatch-msg.sample
+|  |  |  |  +--commit-msg.sample
+|  |  |  |  +--fsmonitor-watchman.sample
+|  |  |  |  +--post-update.sample
+|  |  |  |  +--pre-applypatch.sample
+|  |  |  |  +--pre-commit.sample
+|  |  |  |  +--pre-merge-commit.sample
+|  |  |  |  +--pre-push.sample
+|  |  |  |  +--pre-rebase.sample
+|  |  |  |  +--pre-receive.sample
+|  |  |  |  +--prepare-commit-msg.sample
+|  |  |  |  +--update.sample
+|  |  |  +--index
+|  |  |  +--info/
+|  |  |  |  +--exclude
+|  |  |  +--logs/
+|  |  |  |  +--HEAD
+|  |  |  |  +--refs/
+|  |  |  |  |  +--heads/
+|  |  |  |  |  |  +--feature
+|  |  |  |  |  |  +--master
+|  |  |  |  |  |  +--storm
+|  |  |  |  |  +--remotes/
+|  |  |  +--objects/
+|  |  |  |  +--05/
+|  |  |  |  |  +--1cf214be9618e1a4035c6d33193708b14baa64
+|  |  |  |  +--08/
+|  |  |  |  |  +--d6f93b971aca6deede52698e9f06e3757e75f2
+|  |  |  |  +--0b/
+|  |  |  |  |  +--2c412ae7e091d6086f65b2ad2cb0b9eadee936
+|  |  |  |  +--14/
+|  |  |  |  |  +--64c7b24663acc75cde54a7412e639d4cd1fbbc
+|  |  |  |  +--1b/
+|  |  |  |  |  +--e553306f38bcc04893d2d62c49032595e6b1ee
+|  |  |  |  +--37/
+|  |  |  |  |  +--c24c2c66380640fc0b1dbfb30f47308a8891eb
+|  |  |  |  +--3f/
+|  |  |  |  |  +--a2a5e31ec2d67cbd510599e44f72579a686307
+|  |  |  |  +--4c/
+|  |  |  |  |  +--d9ff5bae68fc075b2b058029d51344fb6ce6ab
+|  |  |  |  +--56/
+|  |  |  |  |  +--607095e8c090dd04bf2fc8242df02664e5233c
+|  |  |  |  +--63/
+|  |  |  |  |  +--5e80d20fffb17993bfabdf05a7803cc3414997
+|  |  |  |  +--6a/
+|  |  |  |  |  +--607fd0b821c2da72e14bd95b4d6e7d79fca57b
+|  |  |  |  +--7d/
+|  |  |  |  |  +--ac99bc5ca489beabbd744823931bc3fa1be94f
+|  |  |  |  +--7e/
+|  |  |  |  |  +--b6eda5ed192335aad068fb7371e886fdb05842
+|  |  |  |  +--84/
+|  |  |  |  |  +--83ae0abd9550ce678b170a0c66a32b79429690
+|  |  |  |  +--8b/
+|  |  |  |  |  +--7a2071b616c1dcdacf7475c4913a00737edc0d
+|  |  |  |  +--8c/
+|  |  |  |  |  +--32c02ec63442c680bceae4c00d6eda48c92eb7
+|  |  |  |  +--8d/
+|  |  |  |  |  +--43aaca4fe2f081304df54dcc25120928f90664
+|  |  |  |  +--8e/
+|  |  |  |  |  +--1d3cd11b31714ee686dfe9b0d7ce68b7875f72
+|  |  |  |  +--90/
+|  |  |  |  |  +--9d9eea9abd6f43d92357aca3243dabaedf6cc2
+|  |  |  |  |  +--f363c2d546dfccaa4c6da41e5f1eb7b7bbbb0f
+|  |  |  |  +--94/
+|  |  |  |  |  +--afe00fa374e951646771d26c10fc5bfefbc708
+|  |  |  |  +--95/
+|  |  |  |  |  +--9f6ff8b48f5af991147b9bcb5527b9d4baaae1
+|  |  |  |  +--96/
+|  |  |  |  |  +--1088294ba74f59426898ddfd4a1acc2659601f
+|  |  |  |  +--ad/
+|  |  |  |  |  +--19a01bca3b34d7286608baaa9fd570f56801a9
+|  |  |  |  +--b3/
+|  |  |  |  |  +--94d77ac2c3118c626c9f7caf5786b36bf7d723
+|  |  |  |  |  +--a04fc5ee7ebb957a50b5c046d9163acde1aeab
+|  |  |  |  +--b4/
+|  |  |  |  |  +--1209ddfa2e2aacea1024b8d02170f0d4e0f81c
+|  |  |  |  |  +--25abddfcfca1fbfd2b0b0ba07e249f87ea84da
+|  |  |  |  +--b5/
+|  |  |  |  |  +--87a18038fa9a8417c90850523b3cad9e1d120c
+|  |  |  |  +--c4/
+|  |  |  |  |  +--b33000e35cd48d7c32d62e024470540a346360
+|  |  |  |  |  +--bf4f2f028654074eeaba7ff1fdb3460f5b8b62
+|  |  |  |  +--c9/
+|  |  |  |  |  +--b7a32c8182506606cf8fd16f042d3f479581d2
+|  |  |  |  +--d1/
+|  |  |  |  |  +--3acd8bc64eb2cdb62b578bb6d1366c65b407bc
+|  |  |  |  +--e8/
+|  |  |  |  |  +--796978ebcf6ff125e1a6a12f90205dfe9ed12f
+|  |  |  |  +--f3/
+|  |  |  |  |  +--f6dc807383c8c3d944bee82950c8bd405e4151
+|  |  |  |  +--info/
+|  |  |  |  +--pack/
+|  |  |  +--ORIG_HEAD
+|  |  |  +--packed-refs
+|  |  |  +--refs/
+|  |  |  |  +--heads/
+|  |  |  |  |  +--feature
+|  |  |  |  |  +--master
+|  |  |  |  |  +--storm
+|  |  |  |  +--remotes/
+|  |  |  |  +--tags/
+|  |  |  |  |  +--session1
+|  |  +--.gitignore
+|  |  +--arrows.txt
+|  |  +--pursuit.txt
+|  |  +--song.txt
+|  +--helloci/
+|  |  +--.git/
+|  |  |  +--config
+|  |  |  +--description
+|  |  |  +--HEAD
+|  |  |  +--hooks/
+|  |  |  |  +--applypatch-msg.sample
+|  |  |  |  +--commit-msg.sample
+|  |  |  |  +--fsmonitor-watchman.sample
+|  |  |  |  +--post-update.sample
+|  |  |  |  +--pre-applypatch.sample
+|  |  |  |  +--pre-commit.sample
+|  |  |  |  +--pre-merge-commit.sample
+|  |  |  |  +--pre-push.sample
+|  |  |  |  +--pre-rebase.sample
+|  |  |  |  +--pre-receive.sample
+|  |  |  |  +--prepare-commit-msg.sample
+|  |  |  |  +--update.sample
+|  |  |  +--index
+|  |  |  +--info/
+|  |  |  |  +--exclude
+|  |  |  +--logs/
+|  |  |  |  +--HEAD
+|  |  |  |  +--refs/
+|  |  |  |  |  +--heads/
+|  |  |  |  |  |  +--master
+|  |  |  |  |  +--remotes/
+|  |  |  |  |  |  +--origin/
+|  |  |  |  |  |  |  +--HEAD
+|  |  |  +--objects/
+|  |  |  |  +--info/
+|  |  |  |  +--pack/
+|  |  |  |  |  +--pack-ba38fa29b0789e9cd0c0f8a2a4d3d3891a147a1a.idx
+|  |  |  |  |  +--pack-ba38fa29b0789e9cd0c0f8a2a4d3d3891a147a1a.pack
+|  |  |  +--packed-refs
+|  |  |  +--refs/
+|  |  |  |  +--heads/
+|  |  |  |  |  +--master
+|  |  |  |  +--remotes/
+|  |  |  |  |  +--origin/
+|  |  |  |  |  |  +--HEAD
+|  |  |  |  +--tags/
+|  |  +--.gitignore
+|  |  +--.idea/
+|  |  |  +--.gitignore
+|  |  |  +--.name
+|  |  |  +--compiler.xml
+|  |  |  +--helloci.iml
+|  |  |  +--jarRepositories.xml
+|  |  |  +--libraries/
+|  |  |  |  +--Maven__junit_junit_4_11.xml
+|  |  |  |  +--Maven__org_hamcrest_hamcrest_core_1_3.xml
+|  |  |  +--misc.xml
+|  |  |  +--modules.xml
+|  |  |  +--vcs.xml
+|  |  |  +--workspace.xml
+|  |  +--.NET/
+|  |  |  +--Calculator/
+|  |  |  |  +--Calc.cs
+|  |  |  |  +--Calculator.csproj
+|  |  |  |  +--Lib/
+|  |  |  |  |  +--nunit.framework.dll
+|  |  |  |  +--Properties/
+|  |  |  |  |  +--AssemblyInfo.cs
+|  |  |  +--Calculator.sln
+|  |  |  +--CalculatorTest/
+|  |  |  |  +--App.config
+|  |  |  |  +--CalculatorTest.csproj
+|  |  |  |  +--Properties/
+|  |  |  |  |  +--AssemblyInfo.cs
+|  |  |  |  +--runlist.txt
+|  |  |  |  +--TestCalculator.cs
+|  |  +--Java/
+|  |  |  +--hello-ci.iml
+|  |  |  +--pom.xml
+|  |  |  +--src/
+|  |  |  |  +--main/
+|  |  |  |  |  +--java/
+|  |  |  |  |  |  +--com/
+|  |  |  |  |  |  |  +--github/
+|  |  |  |  |  |  |  |  +--vitalliuss/
+|  |  |  |  |  |  |  |  |  +--helloci/
+|  |  |  |  |  |  |  |  |  |  +--App.java
+|  |  |  |  |  |  |  |  |  |  +--EmptyClass.java
+|  |  |  |  +--test/
+|  |  |  |  |  +--java/
+|  |  |  |  |  |  +--com/
+|  |  |  |  |  |  |  +--github/
+|  |  |  |  |  |  |  |  +--vitalliuss/
+|  |  |  |  |  |  |  |  |  +--helloci/
+|  |  |  |  |  |  |  |  |  |  +--AppTest.java
+|  |  |  +--target/
+|  |  |  |  +--classes/
+|  |  |  |  |  +--com/
+|  |  |  |  |  |  +--github/
+|  |  |  |  |  |  |  +--vitalliuss/
+|  |  |  |  |  |  |  |  +--helloci/
+|  |  |  |  |  |  |  |  |  +--App.class
+|  |  |  |  |  |  |  |  |  +--EmptyClass.class
+|  |  |  |  +--generated-sources/
+|  |  |  |  |  +--annotations/
+|  |  |  |  +--generated-test-sources/
+|  |  |  |  |  +--test-annotations/
+|  |  |  |  +--maven-status/
+|  |  |  |  |  +--maven-compiler-plugin/
+|  |  |  |  |  |  +--compile/
+|  |  |  |  |  |  |  +--default-compile/
+|  |  |  |  |  |  |  |  +--createdFiles.lst
+|  |  |  |  |  |  |  |  +--inputFiles.lst
+|  |  |  |  |  |  +--testCompile/
+|  |  |  |  |  |  |  +--default-testCompile/
+|  |  |  |  |  |  |  |  +--createdFiles.lst
+|  |  |  |  |  |  |  |  +--inputFiles.lst
+|  |  |  |  +--surefire-reports/
+|  |  |  |  |  +--2020-08-30T17-59-39_312.dump
+|  |  |  |  |  +--com.github.vitalliuss.helloci.AppTest.txt
+|  |  |  |  |  +--TEST-com.github.vitalliuss.helloci.AppTest.xml
+|  |  |  |  +--test-classes/
+|  |  |  |  |  +--com/
+|  |  |  |  |  |  +--github/
+|  |  |  |  |  |  |  +--vitalliuss/
+|  |  |  |  |  |  |  |  +--helloci/
+|  |  |  |  |  |  |  |  |  +--AppTest.class
+|  |  +--JS/
+|  |  |  +--helloworld.js
+|  |  +--LICENSE
+|  |  +--README.md
+|  +--testTask/
+|  |  +--.git/
+|  |  |  +--config
+|  |  |  +--description
+|  |  |  +--HEAD
+|  |  |  +--hooks/
+|  |  |  |  +--applypatch-msg.sample
+|  |  |  |  +--commit-msg.sample
+|  |  |  |  +--fsmonitor-watchman.sample
+|  |  |  |  +--post-update.sample
+|  |  |  |  +--pre-applypatch.sample
+|  |  |  |  +--pre-commit.sample
+|  |  |  |  +--pre-merge-commit.sample
+|  |  |  |  +--pre-push.sample
+|  |  |  |  +--pre-rebase.sample
+|  |  |  |  +--pre-receive.sample
+|  |  |  |  +--prepare-commit-msg.sample
+|  |  |  |  +--update.sample
+|  |  |  +--index
+|  |  |  +--info/
+|  |  |  |  +--exclude
+|  |  |  +--logs/
+|  |  |  |  +--HEAD
+|  |  |  |  +--refs/
+|  |  |  |  |  +--heads/
+|  |  |  |  |  |  +--master
+|  |  |  |  |  +--remotes/
+|  |  |  |  |  |  +--origin/
+|  |  |  |  |  |  |  +--HEAD
+|  |  |  +--objects/
+|  |  |  |  +--info/
+|  |  |  |  +--pack/
+|  |  |  |  |  +--pack-4226728149e49be881121b267859dfafbd891431.idx
+|  |  |  |  |  +--pack-4226728149e49be881121b267859dfafbd891431.pack
+|  |  |  +--packed-refs
+|  |  |  +--refs/
+|  |  |  |  +--heads/
+|  |  |  |  |  +--master
+|  |  |  |  +--remotes/
+|  |  |  |  |  +--origin/
+|  |  |  |  |  |  +--HEAD
+|  |  |  |  +--tags/
+|  |  +--.gitignore
+|  |  +--LICENSE
+|  |  +--pom.xml
+|  |  +--README.md
+|  |  +--src/
+|  |  |  +--test/
+|  |  |  |  +--java/
+|  |  |  |  |  +--HerokuTest.java
+|  +--testTask.rar
+|  +--trySelenium/
+|  |  +--trySelenium/
+|  |  |  +--.classpath
+|  |  |  +--.git/
+|  |  |  |  +--config
+|  |  |  |  +--description
+|  |  |  |  +--HEAD
+|  |  |  |  +--hooks/
+|  |  |  |  |  +--applypatch-msg.sample
+|  |  |  |  |  +--commit-msg.sample
+|  |  |  |  |  +--fsmonitor-watchman.sample
+|  |  |  |  |  +--post-update.sample
+|  |  |  |  |  +--pre-applypatch.sample
+|  |  |  |  |  +--pre-commit.sample
+|  |  |  |  |  +--pre-merge-commit.sample
+|  |  |  |  |  +--pre-push.sample
+|  |  |  |  |  +--pre-rebase.sample
+|  |  |  |  |  +--pre-receive.sample
+|  |  |  |  |  +--prepare-commit-msg.sample
+|  |  |  |  |  +--update.sample
+|  |  |  |  +--index
+|  |  |  |  +--info/
+|  |  |  |  |  +--exclude
+|  |  |  |  +--logs/
+|  |  |  |  |  +--HEAD
+|  |  |  |  |  +--refs/
+|  |  |  |  |  |  +--heads/
+|  |  |  |  |  |  |  +--master
+|  |  |  |  |  |  +--remotes/
+|  |  |  |  |  |  |  +--origin/
+|  |  |  |  |  |  |  |  +--HEAD
+|  |  |  |  +--objects/
+|  |  |  |  |  +--info/
+|  |  |  |  |  +--pack/
+|  |  |  |  |  |  +--pack-4226728149e49be881121b267859dfafbd891431.idx
+|  |  |  |  |  |  +--pack-4226728149e49be881121b267859dfafbd891431.pack
+|  |  |  |  +--packed-refs
+|  |  |  |  +--refs/
+|  |  |  |  |  +--heads/
+|  |  |  |  |  |  +--master
+|  |  |  |  |  +--remotes/
+|  |  |  |  |  |  +--origin/
+|  |  |  |  |  |  |  +--HEAD
+|  |  |  |  |  +--tags/
+|  |  |  +--.gitignore
+|  |  |  +--.project
+|  |  |  +--.settings/
+|  |  |  |  +--org.eclipse.jdt.core.prefs
+|  |  |  +--LICENSE
+|  |  |  +--pom.xml
+|  |  |  +--README.md
+|  |  |  +--src/
+|  |  |  |  +--test/
+|  |  |  |  |  +--java/
+|  |  |  |  |  |  +--HerokuTest.java
+|  |  |  +--target/
+|  |  |  |  +--classes/
+|  |  |  |  |  +--.gitignore
+|  |  |  |  |  +--META-INF/
+|  |  |  |  |  |  +--MANIFEST.MF
+|  |  |  |  |  |  +--maven/
+|  |  |  |  |  |  |  +--trySelenium/
+|  |  |  |  |  |  |  |  +--trySelenium/
+|  |  |  |  |  |  |  |  |  +--pom.properties
+|  |  |  |  |  |  |  |  |  +--pom.xml
+|  |  |  |  +--test-classes/
+|  |  |  |  |  +--HerokuTest.class
+|  |  |  +--test-output/
+|  |  |  |  +--bullet_point.png
+|  |  |  |  +--collapseall.gif
+|  |  |  |  +--Default suite/
+|  |  |  |  |  +--Default test.html
+|  |  |  |  |  +--Default test.xml
+|  |  |  |  |  +--testng-failed.xml
+|  |  |  |  +--emailable-report.html
+|  |  |  |  +--failed.png
+|  |  |  |  +--index.html
+|  |  |  |  +--jquery-1.7.1.min.js
+|  |  |  |  +--junitreports/
+|  |  |  |  |  +--TEST-HerokuTest.xml
+|  |  |  |  +--navigator-bullet.png
+|  |  |  |  +--old/
+|  |  |  |  |  +--Default suite/
+|  |  |  |  |  |  +--classes.html
+|  |  |  |  |  |  +--Default test.properties
+|  |  |  |  |  |  +--groups.html
+|  |  |  |  |  |  +--index.html
+|  |  |  |  |  |  +--main.html
+|  |  |  |  |  |  +--methods-alphabetical.html
+|  |  |  |  |  |  +--methods-not-run.html
+|  |  |  |  |  |  +--methods.html
+|  |  |  |  |  |  +--reporter-output.html
+|  |  |  |  |  |  +--testng.xml.html
+|  |  |  |  |  |  +--toc.html
+|  |  |  |  |  +--index.html
+|  |  |  |  +--passed.png
+|  |  |  |  +--skipped.png
+|  |  |  |  +--testng-failed.xml
+|  |  |  |  +--testng-reports.css
+|  |  |  |  +--testng-reports.js
+|  |  |  |  +--testng-results.xml
+|  |  |  |  +--testng.css
+
